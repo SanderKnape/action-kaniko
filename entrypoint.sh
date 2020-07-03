@@ -72,6 +72,7 @@ fi
 export ARGS="$CACHE $CONTEXT $DOCKERFILE $TARGET $DESTINATION $INPUT_EXTRA_ARGS"
 
 echo $ARGS
+ls -hal
 
 cat <<EOF >/kaniko/.docker/config.json
 {
